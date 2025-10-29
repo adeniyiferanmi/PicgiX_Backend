@@ -4,7 +4,7 @@ dotenv.config()
 
 const password = process.env.MONGODB_PASSWORD
 const username = process.env.MONGODB_USERNAME
-const mongoDbUri = process.env.MONGODB_URl.replace("<db_password>",password)
+const mongoDbUri = process.env.MONGODB_URL.replace("<db_password>",password)
 
 const connectToDb = async () => {
     try {
