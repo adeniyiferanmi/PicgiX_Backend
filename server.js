@@ -19,6 +19,12 @@ app.listen(PORT,() => {
     console.log("App is running✅");  
 })
 
+
+app.get("/", (req, res) => {
+  res.send("✅ Welcome to Picfix AI Video Generator — Server is running!");
+});
+
+
 app.get("/api/v1",(req,res)=>{
     res.send("Welcome to Picfix ai video generator version 1")
 })
